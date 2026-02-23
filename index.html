@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Cassue Novias | Alta Costura Nupcial - Arequipa</title>
+    <meta name="description" content="Vestidos de novia exclusivos y personalizados en Arequipa. Diseño a medida, telas importadas y una experiencia única. Única como tú.">
+    
+    <!-- Fuentes Google Fonts Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --color-black: #0a0a0a;
+            --color-white: #ffffff;
+            --color-ivory: #1a1a1a;
+            --color-gold: #D4B08C;
+            --color-gold-light: #E8D5B7;
+            --color-gold-dark: #B8956A;
+            --color-gray: #2B2B2B;
+            --color-light-gray: #333333;
+            --font-title: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-black);
+            color: var(--color-white);
+            line-height: 1.8;
+            overflow-x: hidden;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-title);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.6s var(--transition-smooth);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* HEADER LUXURY */
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 176, 140, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid rgba(212, 176, 140, 0.2);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            padding: 0 50px;
+        }
+
+        .logo {
+            font-family: var(--font-title);
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 8px;
+            color: var(--color-white);
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        header.scrolled .logo {
+            color: var(--color-black);
+        }
+
+        .logo span {
+            color: var(--color-gold);
+            font-weight: 300;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 400;
+            position: relative;
+            color: var(--color-white);
+            padding: 10px 0;
+        }
+
+        header.scrolled .nav-links a {
+            color: var(--color-black);
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: width 0.6s var(--transition-smooth);
+        }
+
+        .nav-links a:hover::before {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-icons i {
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.4s var(--transition-smooth);
+            color: var(--color-white);
+            position: relative;
+        }
+
+        header.scrolled .nav-icons i {
+            color: var(--color-black);
+        }
+
+        .nav-icons i::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: width 0.4s var(--transition-smooth);
+        }
+
+        .nav-icons i:hover::after {
+            width: 100%;
+        }
+
+        .nav-icons i:hover {
+            color: var(--color-gold);
+            transform: translateY(-2px);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 1px;
+            background-color: var(--color-white);
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        header.scrolled .hamburger span {
+            background-color: var(--color-black);
+        }
+
+        /* HERO SECTION ULTRA LUXURY */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7) contrast(1.1);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.7) 100%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            padding: 0 40px;
+            animation: fadeInLuxury 2s var(--transition-smooth);
+        }
+
+        .hero-subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 30px;
+            color: var(--color-gold);
+            font-weight: 400;
+            animation: slideUp 1s var(--transition-smooth) 0.3s backwards;
+        }
+
+        .hero-content h1 {
+            font-size: 6rem;
+            margin-bottom: 30px;
+            letter-spacing: 15px;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.1;
+            animation: slideUp 1s var(--transition-smooth) 0.5s backwards;
+            text-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 50px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            animation: slideUp 1s var(--transition-smooth) 0.7s backwards;
+            color: var(--color-gold-light);
+            font-family: var(--font-title);
+        }
+
+        .btn-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 50px;
+            background: transparent;
+            color: var(--color-white);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s var(--transition-smooth);
+            animation: slideUp 1s var(--transition-smooth) 0.9s backwards;
+        }
+
+        .btn-luxury::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 176, 140, 0.2), transparent);
+            transition: left 0.6s var(--transition-smooth);
+        }
+
+        .btn-luxury:hover::before {
+            left: 100%;
+        }
+
+        .btn-luxury:hover {
+            border-color: var(--color-gold);
+            background: rgba(212, 176, 140, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(212, 176, 140, 0.2);
+        }
+
+        .btn-luxury i {
+            font-size: 1.2rem;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .btn-luxury:hover i {
+            transform: translateX(5px);
+        }
+
+        /* SCROLL INDICATOR */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, var(--color-gold), transparent);
+        }
+
+        /* BOTÓN FLOTANTE WHATSAPP LUXURY */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.6s var(--transition-smooth);
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.5);
+        }
+
+        /* SECTIONS LUXURY */
+        section {
+            padding: 150px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .section-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            color: var(--color-gold);
+            font-weight: 500;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            letter-spacing: 8px;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .section-line {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            margin: 0 auto;
+        }
+
+        /* ABOUT LUXURY */
+        .about {
+            background-color: var(--color-ivory);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            border: 1px solid rgba(212, 176, 140, 0.1);
+            border-radius: 50%;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .about-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid var(--color-gold);
+            z-index: -1;
+            transition: all 0.6s var(--transition-smooth);
+        }
+
+        .about-img:hover::before {
+            top: 10px;
+            left: 10px;
+            right: -10px;
+            bottom: -10px;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+            filter: grayscale(100%) brightness(0.9);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .about-img:hover img {
+            filter: grayscale(0%) brightness(1);
+        }
+
+        .about-text h3 {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+            font-weight: 300;
+            line-height: 1.3;
+        }
+
+        .about-text p {
+            margin-bottom: 30px;
+            color: #bbb;
+            font-weight: 300;
+            line-height: 2;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .signature {
+            font-family: var(--font-title);
+            font-style: italic;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            color: var(--color-gold);
+            font-weight: 300;
+        }
+
+        /* CORTES LUXURY */
+        .cortes-section {
+            background-color: var(--color-black);
+        }
+
+        .cortes-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+
+        .corte-card {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+
+        .corte-img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .corte-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s var(--transition-smooth);
+            filter: grayscale(100%);
+        }
+
+        .corte-card:hover .corte-img img {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+
+        .corte-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            opacity: 0;
+            transition: opacity 0.6s var(--transition-smooth);
+        }
+
+        .corte-card:hover .corte-overlay {
+            opacity: 1;
+        }
+
+        .corte-overlay h4 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+            font-weight: 400;
+            transform: translateY(20px);
+            transition: transform 0.6s var(--transition-smooth);
+        }
+
+        .corte-card:hover .corte-overlay h4 {
+            transform: translateY(0);
+        }
+
+        .corte-overlay p {
+            font-size: 0.85rem;
+            color: #aaa;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            transform: translateY(20px);
+            transition: transform 0.6s var(--transition-smooth) 0.1s;
+        }
+
+        .corte-card:hover .corte-overlay p {
+            transform: translateY(0);
+        }
+
+        .btn-consultar-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: var(--color-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.5s var(--transition-smooth);
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        .corte-card:hover .btn-consultar-luxury {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .btn-consultar-luxury:hover {
+            background: var(--color-gold);
+            border-color: var(--color-gold);
+        }
+
+        .btn-consultar-luxury i {
+            font-size: 1rem;
+            color: var(--color-gold);
+        }
+
+        /* GALERÍA LUXURY */
+        .gallery {
+            background-color: var(--color-ivory);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(212, 176, 140, 0.15);
+            opacity: 0;
+            transition: opacity 0.6s var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* PROCESS LUXURY */
+        .process {
+            background-color: var(--color-black);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-top: 80px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 50px 40px;
+            border: 1px solid rgba(212, 176, 140, 0.1);
+            position: relative;
+            transition: all 0.6s var(--transition-smooth);
+            background: rgba(26, 26, 26, 0.5);
+        }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            transform: scaleX(0);
+            transition: transform 0.6s var(--transition-smooth);
+        }
+
+        .step:hover::before {
+            transform: scaleX(1);
+        }
+
+        .step:hover {
+            border-color: rgba(212, 176, 140, 0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .step-number {
+            font-family: var(--font-title);
+            font-size: 3.5rem;
+            color: var(--color-gold);
+            margin-bottom: 25px;
+            font-weight: 300;
+            opacity: 0.6;
+        }
+
+        .step h4 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            font-weight: 400;
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: #999;
+            line-height: 2;
+        }
+
+        /* TESTIMONIALS LUXURY */
+        .testimonials {
+            background-color: var(--color-ivory);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+
+        .testimonial-item {
+            padding: 60px;
+            background-color: var(--color-black);
+            text-align: center;
+            border: 1px solid rgba(212, 176, 140, 0.1);
+            position: relative;
+            transition: all 0.6s var(--transition-smooth);
+        }
+
+        .testimonial-item::before {
+            content: '"';
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            font-family: var(--font-title);
+            font-size: 6rem;
+            color: var(--color-gold);
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .testimonial-item:hover {
+            border-color: rgba(212, 176, 140, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-item i {
+            font-size: 2rem;
+            color: var(--color-gold);
+            margin-bottom: 30px;
+        }
+
+        .testimonial-item p {
+            font-family: var(--font-title);
+            font-style: italic;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .testimonial-author {
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: var(--color-gold);
+        }
+
+        /* CONTACT LUXURY */
+        .contact {
+            background-color: var(--color-black);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+        }
+
+        .contact-info h3 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+            font-weight: 300;
+        }
+
+        .contact-details {
+            margin-bottom: 50px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(212, 176, 140, 0.1);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--color-gold);
+            margin-top: 5px;
+        }
+
+        .contact-item h4 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .contact-item p {
+            font-weight: 300;
+            color: #999;
+            line-height: 1.8;
+            font-size: 0.9rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(212, 176, 140, 0.2);
+            background: rgba(26, 26, 26, 0.5);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            transition: all 0.4s var(--transition-smooth);
+            color: var(--color-white);
+            letter-spacing: 1px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #666;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            background: rgba(26, 26, 26, 0.8);
+        }
+
+        .contact-form textarea {
+            min-height: 200px;
+            resize: vertical;
+        }
+
+        /* FOOTER LUXURY */
+        footer {
+            background-color: var(--color-ivory);
+            color: var(--color-white);
+            padding: 100px 0 40px;
+            border-top: 1px solid rgba(212, 176, 140, 0.1);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 80px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 30px;
+            display: inline-block;
+            color: var(--color-white);
+        }
+
+        .footer-brand p {
+            font-weight: 300;
+            line-height: 2.2;
+            color: #999;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(212, 176, 140, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s var(--transition-smooth);
+            color: var(--color-white);
+            font-size: 1.1rem;
+        }
+
+        .social-links a:hover {
+            background-color: var(--color-gold);
+            border-color: var(--color-gold);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul li a {
+            font-weight: 300;
+            color: #999;
+            transition: all 0.4s var(--transition-smooth);
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-column ul li a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: width 0.4s var(--transition-smooth);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--color-gold);
+            padding-left: 10px;
+        }
+
+        .footer-column ul li a:hover::before {
+            width: 100%;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(212, 176, 140, 0.1);
+            padding-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* ANIMATIONS LUXURY */
+        @keyframes fadeInLuxury {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .cortes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 4rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+                letter-spacing: 8px;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .cortes-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            section {
+                padding: 100px 0;
+            }
+
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                font-size: 28px;
+                bottom: 30px;
+                right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <div class="logo">D'Cassue <span>Novias</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Atelier</a></li>
+                <li><a href="#cortes">Colecciones</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#proceso">Experiencia</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION CON VIDEO DE FONDO -->
+    <section class="hero" id="inicio">
+        <div class="video-background">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-bride-in-a-white-dress-walking-in-a-garden-34956-large.mp4" type="video/mp4">
+                <!-- Video alternativo si el primero no carga -->
+                <source src="https://player.vimeo.com/external/371846723.sd.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Alta Costura Nupcial</p>
+            <h1>ÚNICA COMO TÚ</h1>
+            <p>"No vendemos vestidos, creamos recuerdos"</p>
+            <a href="https://wa.me/51935688402?text=Hola%20D'Cassue%20Novias,%20quiero%20agendar%20una%20cita" 
+               class="btn-luxury" 
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                CONSULTAR AHORA
+            </a>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/51935688402?text=Hola%20D'Cassue%20Novias" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       title="Consultar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://d14ghu6r7uevv3.cloudfront.net/2024/08/1536x1920px_LN-1.jpg" alt="D'Cassue Novias Atelier">
+                </div>
+                <div class="about-text">
+                    <h3>Nuestra Historia</h3>
+                    <p>D'Cassue Novias nace en Arequipa inspirado en la tradición de costura nupcial familiar, combinando técnicas artesanales con diseño contemporáneo. Fundado por Katherine Judith Salazar Cazorla, nuestro atelier se especializa en crear vestidos exclusivos y personalizados a medida.</p>
+                    <p>Cada diseño es una obra única que resalta la personalidad de cada clienta, utilizando telas y encajes importados de la más alta calidad. Nuestro enfoque está en realzar tu silueta con elegancia, delicadeza y un toque juvenil.</p>
+                    <p>Creemos que tu vestido de novia debe ser mucho más que una prenda: debe ser la materialización de tus sueños, una pieza que cuente tu historia de amor y te haga sentir única en el día más importante de tu vida.</p>
+                    <div class="signature">Katherine Salazar</div>
+                    <div style="font-size: 0.85rem; color: #666; margin-top: 10px; letter-spacing: 2px;">Fundadora & Diseñadora Principal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPOS DE CORTES -->
+    <section class="cortes-section" id="cortes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Colecciones Exclusivas</span>
+                <h2 class="section-title">Tipos de Cortes</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="cortes-grid">
+                <!-- Corte Princesa -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Princesa">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Princesa</h4>
+                        <p>Falda voluminosa y cintura marcada para una apariencia de cuento de hadas</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Princesa" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Imperio -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Imperio">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Imperio</h4>
+                        <p>Cintura alta bajo el busto con caída fluida y elegante</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Imperio" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Sirena -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Sirena">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Sirena</h4>
+                        <p>Ajuste perfecto desde el busto hasta la rodilla que realza tu figura</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Sirena" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Trompeta -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1546193430-c2d207739ed7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Trompeta">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Trompeta</h4>
+                        <p>Silueta entallada que se abre suavemente desde la mitad del muslo</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Trompeta" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Recto -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Recto">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Recto</h4>
+                        <p>Líneas limpias y modernas con caída vertical elegante</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Recto" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Ball Gown -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1566173921275-54604c8c5f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Ball Gown">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Ball Gown</h4>
+                        <p>Cuerpo ajustado con falda muy amplia y espectacular</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Ball%20Gown" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corte Vintage -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1512474932049-78ac69ede12c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte Vintage">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Vintage</h4>
+                        <p>Estilo clásico y romántico con detalles de épocas pasadas</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20el%20corte%20Vintage" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Personalizado -->
+                <div class="corte-card">
+                    <div class="corte-img">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b9519e02a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Personalizado">
+                    </div>
+                    <div class="corte-overlay">
+                        <h4>Personalizado</h4>
+                        <p>Diseño único creado especialmente para ti, a tu medida y gusto</p>
+                        <a href="https://wa.me/51935688402?text=Hola,%20me%20interesa%20un%20diseño%20personalizado" class="btn-consultar-luxury" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portafolio</span>
+                <h2 class="section-title">Galería</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Novia 1">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Novia 2">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Novia 3">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Novia 4">
+                    <div class="gallery-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process" id="proceso">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nuestro Proceso</span>
+                <h2 class="section-title">La Experiencia D'Cassue</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h4>Cita Personalizada</h4>
+                    <p>Agenda tu visita en nuestro atelier en Arequipa. Te escuchamos para entender tu visión y sueños.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h4>Diseño & Medidas</h4>
+                    <p>Tomamos tus medidas exactas y diseñamos un patrón único adaptado a tu morfología.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h4>Confección</h4>
+                    <p>Elaboración artesanal con telas importadas y estrictos controles de calidad en cada etapa.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h4>Entrega Soñada</h4>
+                    <p>Recibe tu vestido en nuestra caja de lujo junto con accesorios coordinados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Testimonios</span>
+                <h2 class="section-title">Historias de Novias</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Mi vestido superó todas mis expectativas. El proceso fue mágico y Katherine entendió exactamente lo que quería. Me sentí única y hermosa en mi boda."</p>
+                    <div class="testimonial-author">Valeria Rojas</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-top: 10px; letter-spacing: 2px;">Boda - Marzo 2025</div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"La atención personalizada y la calidad de los materiales hicieron toda la diferencia. Cada detalle fue perfecto. Recomiendo D'Cassue completamente."</p>
+                    <div class="testimonial-author">Camila Mendoza</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-top: 10px; letter-spacing: 2px;">Boda - Enero 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Contacto</span>
+                <h2 class="section-title">Reserva tu Cita</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Visítanos en Arequipa</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Arequipa, Perú<br>A 20 metros del Parque del Avión</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>Teléfono / WhatsApp</h4>
+                                <p>+51 935 688 402<br>Lunes a Sábado: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@dcassuenovias.com<br>citas@dcassuenovias.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="far fa-clock"></i>
+                            <div>
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Sábado: 9:00 AM - 7:00 PM<br>Domingo: Con Cita Previa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nombre Completo" required>
+                        <input type="email" placeholder="Correo Electrónico" required>
+                        <input type="tel" placeholder="Teléfono / Celular" required>
+                        <input type="date" placeholder="Fecha Tentativa de Boda">
+                        <textarea placeholder="Cuéntanos sobre tu vestido ideal..." required></textarea>
+                        <button type="submit" class="btn-luxury" style="width: 100%; border: none;">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">D'Cassue <span>Novias</span></div>
+                    <p>Vestidos exclusivos y personalizados que cuentan historias. Diseñados con amor en Arequipa para hacer de tu día algo único e inolvidable.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Colecciones</h4>
+                    <ul>
+                        <li><a href="#">Línea Princesa</a></li>
+                        <li><a href="#">Línea Sirena</a></li>
+                        <li><a href="#">Línea A</a></li>
+                        <li><a href="#">Diseños Personalizados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Cita Personalizada</a></li>
+                        <li><a href="#">Asesoría Virtual</a></li>
+                        <li><a href="#">Accesorios Nupciales</a></li>
+                        <li><a href="#">Ajustes y Modificaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Nuestro Proceso</a></li>
+                        <li><a href="#">Testimonios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 D'Cassue Novias. Todos los derechos reservados. | Diseñado con ❤️ en Arequipa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+                navLinks.style.padding = '40px';
+                navLinks.style.backdropFilter = 'blur(20px)';
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto para confirmar tu cita.');
+            this.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and steps
+        document.querySelectorAll('.corte-card, .step, .testimonial-item, .gallery-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        });
+
+        // Video play on mobile (some browsers block autoplay)
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.video-background video');
+            video.play().catch(error => {
+                console.log("Autoplay prevented:", error);
+            });
+        });
+    </script>
+</body>
+</html>
